@@ -106,11 +106,69 @@
     const resultsContainer = document.getElementById('results');
     const submitButton = document.getElementById('submit');
     const myQuestions = [
-       {
+      {
         question: "How do you feel physically right now? ",
         answers: {
           a: "I feel physically normal",
           b: "I'm not feeling quite right",
+          
+        },
+        correctAnswer: "b"
+      },
+  
+      {
+        question: "How do have a sore or painful throat? ",
+        answers: {
+          a: "Yes",
+          b: "No",
+          
+        },
+        correctAnswer: "a"
+      },
+        {
+        question: "How do have a loss of smell/taste? ",
+        answers: {
+          a: "Yes",
+          b: "No",
+          
+        },
+        correctAnswer: "a"
+      },
+  
+        {
+        question: "How do have a unusual hoarse voice? ",
+        answers: {
+          a: "Yes",
+          b: "No",
+          
+        },
+        correctAnswer: "a"
+      },
+  
+        {
+        question: "Are you feeling any chest pain or tightness in your chest? ",
+        answers: {
+          a: "Yes",
+          b: "No",
+          
+        },
+        correctAnswer: "a"
+      },
+  
+  
+      {
+        question: "Do you have a fever or feeling too hot? ",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+      {
+        question: "Do you feel chills or shivers(feel too cold)? ",
+        answers: {
+          a: "Yes",
+          b: "No",
         },
         correctAnswer: "a"
       },
@@ -123,21 +181,133 @@
         correctAnswer: "a"
       },
       {
-       question: "Do you feel chills or shivers(feel too cold)? ",
+       question: "Are you regularly taking any blood pressure medications? ",
         answers: {
           a: "Yes",
           b: "No",
         },
         correctAnswer: "a"
       },
+  
        {
-        question: "Do you have a fever or feeling too hot? ",
+       question: "Do you regularly take immunosuppressant medications (including steroids, methotrexate, biologic agents)? ",
         answers: {
           a: "Yes",
           b: "No",
         },
         correctAnswer: "a"
-      }
+      },
+  
+      {
+       question: "Do you regularly take aspirin (baby aspirin or standard dose)? ",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+  
+       {
+       question: "Do you regularly take NSAIDs like ibuprofen, nurofen, diclofenac, naproxen?  ",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+  
+        {
+       question: "Do you have lung disease?  ",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+  
+        {
+       question: "Do you have kidney disease?  ",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+  
+       {
+       question: "Are you living with cancer?",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+  
+         {
+       question: "In general, do you have any health problems that require you to limit your activities? ",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+  
+           {
+       question: "Do you have heart disease? ",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+  
+           {
+       question: "Do you have diabetes?  ",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+  
+          {
+       question: "Do you have hayfever (seasonal allergies)?  ",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+  
+         {
+       question: "Do you have eczema?  ",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+  
+  
+  
+       {
+        question: "Are you experiencing dizziness or light headedness? ",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+  
+       {
+        question: "Do you have a headache? ",
+        answers: {
+          a: "Yes",
+          b: "No",
+        },
+        correctAnswer: "a"
+      },
+  
     ];
   
     // Kick things off
