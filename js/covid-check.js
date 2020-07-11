@@ -172,14 +172,7 @@
         },
         correctAnswer: "a"
       },
-      {
-        question: "Do you have a fever or feeling too hot? ",
-        answers: {
-          a: "Yes",
-          b: "No",
-        },
-        correctAnswer: "a"
-      },
+     
       {
        question: "Are you regularly taking any blood pressure medications? ",
         answers: {
@@ -217,7 +210,7 @@
       },
   
         {
-       question: "Do you have lung disease?  ",
+       question: "Do you have a lung disease?  ",
         answers: {
           a: "Yes",
           b: "No",
@@ -226,7 +219,7 @@
       },
   
         {
-       question: "Do you have kidney disease?  ",
+       question: "Do you have a kidney disease?  ",
         answers: {
           a: "Yes",
           b: "No",
