@@ -1,0 +1,67 @@
+<head>
+<script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript"></script>
+<script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript"></script>
+</head>
+
+<body>
+<style>
+    .fa-2x {
+    font-size: 2em!important;
+    padding-left: inherit!important;
+}
+</style>
+<p id="geoloc"></p>
+    <form action="./js/testing.js" method="GET">
+        &ensp;
+        <label for="service">Service :</label>
+        <input type="text" id="service" name="service" value="" placeholder="Service you looking for">
+        &ensp;
+        <label for="radius">Search Radius :</label>
+              
+        <input type="button" value="-" onClick="subtract_one()"> 0
+        <input type="range" id="radius" min="0" max="10000" step="1" name="radius" value="5000" onchange="show_value(this.value); show_value1(this.value)" placeholder="Search radius you looking in">
+        10000 <input type="button" value="+" onClick="add_one()"> 
+        <span id="slider_value" style="color:red;font-weight:bold;"></span>
+        <label>meter(s) / </label>
+        <span id="slider_value1" style="color:red;font-weight:bold;"></span>
+        <label>kilometers(s)</label>
+        &ensp;
+        <input type="button" value="Submit" onclick="geocodeAndSearch(); document.getElementById('card_deck_a').innerHTML = ''">
+    </form>
+    <br><h1 id="result_a"></h1><hr>
+    <div id="card_deck_a" class="card-columns" style="margin-right: 15px; margin-left: 15px;">
+        
+        
+    </div>
+    <script src="./js/geo.js"></script>
+    <script>
+        show_value(document.getElementById("radius").value);
+        show_value1(document.getElementById("radius").value);
+            function show_value(x)
+            {
+                document.getElementById("slider_value").innerHTML=x;
+            }
+            function show_value1(x)
+            {
+                document.getElementById("slider_value1").innerHTML=x/1000;
+            }
+            function add_one()
+            {
+                document.getElementById("radius").value=parseInt(document.getElementById("radius").value)+1000;
+                show_value(document.getElementById("radius").value);
+                show_value1(document.getElementById("radius").value);
+            }
+            function subtract_one()
+            {
+                document.getElementById("radius").value=parseInt(document.getElementById("radius").value)-1000;
+                show_value(document.getElementById("radius").value);
+                show_value1(document.getElementById("radius").value);
+            }
+    </script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-core.js" type="text/javascript"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-service.js" type="text/javascript"></script>
+    <script src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" type="text/javascript"></script>    
+    <script src="./js/geo.js"></script>
+    <script src="./js/testing.js"></script>
+<!--<%- include("./partials/footer") %> -->
+</body>
