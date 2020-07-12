@@ -70,9 +70,23 @@
           <span>Testing Center</span>
         </a>
       </li>
+
+       <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          <i class="fa fa-gamepad"></i>
+          <span>Games</span>
+        </a>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+            <h6 class="collapse-header">Different Games</h6>
+            <a class="collapse-item" href="2048game.html">2048</a>
+            <a class="collapse-item" href="minesweeper.html">Minesweeper</a>
+            <a class="collapse-item" href="#">Flappy Bird</a>
+            <a class="collapse-item" href="#">Snake</a>
+          </div>
+        </div>
+      </li>
       
-
-
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="#">
@@ -96,46 +110,110 @@
       <!-- Main Content -->
       <div id="content">
 
-        <!-- Topbar -->
-        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
 
-          <!-- Sidebar Toggle (Topbar) -->
-          <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-            <i class="fa fa-bars"></i>
-          </button>
+        <div class="contianer border py-4 text-center shadow m-1" style="height: 7rem;">
+          <div class="row">
+            <div class="col-12">
+              <h3>Corona Testing-Centers</h3>
+            </div>
+          </div>
+        </div>
 
-
-          <!-- Topbar Navbar -->
-          <ul class="navbar-nav ml-auto">
-
-
-              <!-- Dropdown - User Information -->
-              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Profile
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Settings
-                </a>
-                <a class="dropdown-item" href="#">
-                  <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Activity Log
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-                  <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                  Logout
-                </a>
-              </div>
-            </li>
-
-          </ul>
-
-        </nav>
-        <!-- End of Topbar -->
+        <style>
+          #map {
+            width: 100%;
+            height: 400px;
+            background-color: grey;
+          }
+        </style>
+      </head>
+      <body>
+        <!--The div element for the map -->
+        <!--<div id="map"></div>-->
+        <div class="container-fluid mt-5">
+        <div>
+        <iframe id="map" frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?q=covid%20test%20center%20nearby%20me&key=AIzaSyB-C1pIEyKtBVxsajyuGGYb4c6w-MwjN-w" allowfullscreen>
+        </iframe>
+        </div>
       </div>
+
+      </div>
+
+
+ 
+
+
+      <!--<script>
+         // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 28.7041, lng: 77.1025 },
+          zoom: 15
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            var marker = new google.maps.Marker({position: pos, map: map});
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Your Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+
+        // Add marker on click
+
+        /*map.addListener('click', function(e) {
+        placeMarkerAndPanTo(e.latLng, map);
+        });*/
+      }
+
+      // Function for adding marker
+
+      /*function placeMarkerAndPanTo(latLng, map) {
+      var marker = new google.maps.Marker({
+      position: latLng,
+      map: map
+      });
+      map.panTo(latLng);
+      }*/
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+      </script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-C1pIEyKtBVxsajyuGGYb4c6w-MwjN-w&callback=initMap">
+</script>-->
+</body>
+</html>
+
+     
+
+
+
 
       <!-- Footer -->
       <footer class="sticky-footer bg-white text-center">
