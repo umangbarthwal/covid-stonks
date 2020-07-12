@@ -60,17 +60,14 @@
           numCorrect++;
   
           // color the answers green
-          answerContainers[questionNumber].style.color = 'lightgreen';
+        
         }
         // if answer is wrong or blank
-        else{
-          // color the answers red
-          answerContainers[questionNumber].style.color = 'lightgreen';
-        }
+       
       });
   
       // show number of correct answers out of total
-      resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+      
     }
   
     function showSlide(n) {
@@ -107,196 +104,137 @@
     const submitButton = document.getElementById('submit');
     const myQuestions = [
       {
-        question: "How do you feel right now? ",
+        question: "Little interest or pleasure in doing things",
         answers: {
-          a: "I feel physically normal",
-          b: "I'm not feeling quite right",
+          a: "Not at all",
+          b: "Several days",
+          c: "More than half the days",
+          d:"Nearly every day",
+          
+        },
+        correctAnswer: "a"
+      },
+  
+      {
+         question: " Feeling down, depressed, or hopeless",
+        answers:{
+          a: "Not at all",
+          b: "Several days",
+          c: "More than half the days",
+          d:"Nearly every day",
+          
+        },
+        correctAnswer: "b"
+      },
+        {
+      question: "Trouble falling or staying asleep, or sleeping too much",
+        answers: {
+          a: "Not at all",
+          b: "Several days",
+          c: "More than half the days",
+          d:"Nearly every day",
+          
           
         },
         correctAnswer: "b"
       },
   
       {
-        question: "How do have a sore or painful throat? ",
+        question: "Trouble falling or staying asleep, or sleeping too much",
         answers: {
-          a: "Yes",
-          b: "No",
+          a: "Not at all",
+          b: "Several days",
+          c: "More than half the days",
+          d:"Nearly every day",
+          
           
         },
-        correctAnswer: "a"
-      },
-        {
-        question: "How do have a loss of smell/taste? ",
-        answers: {
-          a: "Yes",
-          b: "No",
-          
-        },
-        correctAnswer: "a"
+        correctAnswer: "b"
       },
   
         {
-        question: "How do have a unusual hoarse voice? ",
+        question: "Trouble concentrating on things, such as reading the newspaper or watching television ",
         answers: {
           a: "Yes",
           b: "No",
           
         },
-        correctAnswer: "a"
-      },
-  
-        {
-        question: "Are you feeling any chest pain or tightness in your chest? ",
-        answers: {
-          a: "Yes",
-          b: "No",
-          
-        },
-        correctAnswer: "a"
+        correctAnswer: "b"
       },
   
   
       {
-        question: "Do you have a fever or feeling too hot? ",
+        question: "Feeling tired or having little energy ",
         answers: {
-          a: "Yes",
-          b: "No",
+          a: "Not at all",
+          b: "Several days",
+          c: "More than half the days",
+          d:"Nearly every day",
         },
         correctAnswer: "a"
       },
       {
-        question: "Do you feel chills or shivers(feel too cold)? ",
+        question: "Poor appetite or overeating ",
         answers: {
-          a: "Yes",
-          b: "No",
+          a: "Not at all",
+          b: "Several days",
+          c: "More than half the days",
+          d:"Nearly every day",
         },
         correctAnswer: "a"
       },
      
       {
-       question: "Are you regularly taking any blood pressure medications? ",
+       question: "Feeling bad about yourself - or that you are a failure or have let yourself or your family down ",
         answers: {
           a: "Yes",
           b: "No",
         },
-        correctAnswer: "a"
+        correctAnswer: "b"
       },
   
-       {
-       question: "Do you regularly take immunosuppressant medications (including steroids, methotrexate, biologic agents)? ",
-        answers: {
-          a: "Yes",
-          b: "No",
-        },
-        correctAnswer: "a"
-      },
+     
   
       {
-       question: "Do you regularly take aspirin (baby aspirin or standard dose)? ",
+       question: "Trouble concentrating on things, such as reading the newspaper or watching television ",
         answers: {
           a: "Yes",
           b: "No",
         },
-        correctAnswer: "a"
+        correctAnswer: "b"
       },
   
-       {
-       question: "Do you regularly take NSAIDs like ibuprofen, nurofen, diclofenac, naproxen?  ",
-        answers: {
-          a: "Yes",
-          b: "No",
-        },
-        correctAnswer: "a"
-      },
+      
   
-        {
-       question: "Do you have a lung disease?  ",
-        answers: {
-          a: "Yes",
-          b: "No",
-        },
-        correctAnswer: "a"
-      },
-  
-        {
-       question: "Do you have a kidney disease?  ",
-        answers: {
-          a: "Yes",
-          b: "No",
-        },
-        correctAnswer: "a"
-      },
-  
-       {
-       question: "Are you living with cancer?",
-        answers: {
-          a: "Yes",
-          b: "No",
-        },
-        correctAnswer: "a"
-      },
-  
-         {
-       question: "In general, do you have any health problems that require you to limit your activities? ",
-        answers: {
-          a: "Yes",
-          b: "No",
-        },
-        correctAnswer: "a"
-      },
+      
   
            {
-       question: "Do you have heart disease? ",
+       question: "Moving or speaking so slowly that other people could have noticed ",
         answers: {
           a: "Yes",
           b: "No",
         },
-        correctAnswer: "a"
+        correctAnswer: "b"
       },
   
-           {
-       question: "Do you have diabetes?  ",
-        answers: {
-          a: "Yes",
-          b: "No",
-        },
-        correctAnswer: "a"
-      },
-  
-          {
-       question: "Do you have hayfever (seasonal allergies)?  ",
-        answers: {
-          a: "Yes",
-          b: "No",
-        },
-        correctAnswer: "a"
-      },
-  
-         {
-       question: "Do you have eczema?  ",
-        answers: {
-          a: "Yes",
-          b: "No",
-        },
-        correctAnswer: "a"
-      },
+       
   
   
   
        {
-        question: "Are you experiencing dizziness or light headedness? ",
+        question: "Thoughts that you would be better off dead, or of hurting yourself ",
         answers: {
           a: "Yes",
           b: "No",
         },
-        correctAnswer: "a"
+        correctAnswer: "b"
       },
   
        {
-        question: "Do you have a headache? ",
+        question: "If you checked off any problems, how difficult have these problems made it for you at work, home, or with other people? ",
         answers: {
-          a: "Yes",
-          b: "No",
+          a: "Not at all",
+          b: "Nearly every day",
         },
         correctAnswer: "a"
       },
