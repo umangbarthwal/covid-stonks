@@ -67,7 +67,12 @@
       });
   
       // show number of correct answers out of total
-      
+      if(numCorrect > 8){
+        resultsContainer.innerHTML = ` Yay! You are healthy `;
+      }
+      else{
+         resultsContainer.innerHTML = `You should go to the locate testing center and get a checkup at your nearest testing center soon! `;
+      }
     }
   
     function showSlide(n) {
