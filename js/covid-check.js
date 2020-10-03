@@ -40,6 +40,13 @@ var all_questions = [{
   }
 },
 {
+  question_string: "Do you feel shortness of breath?",
+  choices: {
+    correct: "Yes",
+    wrong: ["No"]
+  }
+},
+{
   question_string: "How do have a unusual hoarse voice?",
   choices: {
     correct: "Yes",
@@ -266,7 +273,7 @@ Quiz.prototype.render = function(container) {
       message = 'We suggest you to locate testing center and report to your nearest center'
       img = "4.png"
     } else {
-      message = 'You are Healthy!'
+      message = 'You are Healthy and fit!'
       img = "5.png"
     }
     $('#quiz-results-message').text(message);
